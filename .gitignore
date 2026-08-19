@@ -1,0 +1,19 @@
+# секреты — никогда в репозиторий
+*.env
+.env*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*nvapi*
+secrets/
+
+# рабочие файлы
+review/
+test/
+fontsrc/
+node_modules/
+*.zip
+*.log
+.DS_Store
