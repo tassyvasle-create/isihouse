@@ -1,0 +1,16 @@
+[Unit]
+Description=isi.house leads API
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/isi-leads/leads-api.py
+Restart=always
+RestartSec=3
+User=www-data
+Group=www-data
+ReadWritePaths=/opt/isi-leads
+ProtectSystem=full
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
